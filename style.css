@@ -1,0 +1,269 @@
+:root {
+    --primary-white : #F5F5DC
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+   
+}
+.profile-img {
+    border-radius: 50%;
+    
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+.menu > ul > li > img {
+    width: 40px;
+    height: 40px;
+}
+
+#projects > .card > img {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 20px
+}
+
+#header {
+    margin-top: 20px;
+    grid-column: 2 / -1 ;
+    margin-left: 50px;
+}
+
+.dashboard {
+   
+grid-column: 1 / 2;
+grid-row: 1 / -1;
+}
+
+#projects {
+    grid-column: 2 / 3;
+}
+
+.anouncement-trending {
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+}
+/* 
+.trending {
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+    
+} */
+
+.trending-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.trending-card h3{
+   margin-bottom: 10px; 
+   font-size: 1.3rem
+}
+
+.trending-card p {
+    margin-top: 0px; 
+ }
+
+ .trending-card img {
+    border-radius:  50%;
+    background-color: aquamarine;
+    padding: 5px;
+ }
+
+#search {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+#search input {
+    width: clamp(200px, 100% , 120%);
+    height:40px;
+    border-radius: 50px;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+#side-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    margin-right: 100px;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+}
+#profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    place-items: center;
+}
+ #profile div {
+    margin-left: 20px;
+    
+ }
+
+
+
+ #profile div p:nth-of-type(1) {
+     font-size: 1.3rem;
+     margin-bottom: 15px;
+ }
+
+ #profile div p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.7rem;
+    white-space: nowrap;
+    margin-top: 0px;
+ }
+
+
+#profile-btn {
+    width: 100%;
+    margin-right: 100px;
+
+}
+
+#profile-btn ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+
+#profile-btn a {
+  background: black;
+    color:  var(--primary-white )  ;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+.dashboard {
+    margin-left: 3px;
+    background: lightblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+.dashboard-header{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+   align-items: center;
+   margin-left: 30px
+   
+}
+.dashboard-header img {
+    height: 70px;
+    width: 70px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    
+}
+
+.menu ul li {
+    display: inherit;
+  font-size: 1.5rem;
+  font-size: bold;
+  
+  
+}
+
+.menu ul li a {
+    display: inherit;
+    align-items: center;
+    gap: 20px;
+    color: var(--primary-white);
+    transition: color 0.5s ease-in-out;
+}
+
+.menu a:hover {
+    color: black
+}
+
+#projects {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.card {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    
+    height: clamp(200px, 300px, 400px);
+    position: relative;
+}
+.card div{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  
+}
+.card div img {
+    width: 40px;
+    height: 40px;
+}
+
+.card p {
+    color: grey;
+    margin-bottom: 50px
+}
+.announce-card {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 5px 20px
+}
